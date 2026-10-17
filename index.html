@@ -1,16 +1,21 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#f4f3ee">
-	<meta name="description" content="The portfolio of Weaam Asem, a software engineering student at Suez Canal University.">
+	<meta name="description"
+		content="The portfolio of Weaam Asem, a software engineering student at Suez Canal University.">
 	<title>Weaam Asem | Software Engineering Student</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<header class="site-header">
 		<a class="wordmark" href="#home" aria-label="Weaam Asem home">WA<span>.</span></a>
@@ -32,7 +37,7 @@
 			</div>
 			<div class="hero-visual" role="img" aria-label="Students working together around a laptop">
 				<div class="visual-label"><span>01 / 03</span><span>CURIOUS BY DEFAULT</span></div>
-				<div class="visual-note">BUILD<br>WITH<br>INTENT<span>+</span></div>
+				<div class="visual-note">HI, I'M<br>WEAAM<span>!</span></div>
 				<div class="visual-caption"><span>BASED IN EGYPT</span><span>SCU · SOFTWARE ENGINEERING</span></div>
 			</div>
 			<div class="hero-index" aria-hidden="true">PORTFOLIO — 2026</div>
@@ -42,7 +47,9 @@
 			<div class="section-label"><span>01</span> A LITTLE ABOUT ME</div>
 			<div class="about-content">
 				<h2 id="about-title">I’m building my foundation in software engineering.</h2>
-				<p>I’m Weaam, a student at Suez Canal University with a growing interest in writing code, solving problems, and turning what I learn into real projects. This is where I keep my coursework and the work I’m proud to share.</p>
+				<p>I’m Weaam, a student at Suez Canal University with a growing interest in writing code, solving
+					problems, and turning what I learn into real projects. This is where I keep my coursework and the
+					work I’m proud to share.</p>
 				<div class="education-line">
 					<span class="education-icon" aria-hidden="true">SCU</span>
 					<div><strong>Suez Canal University</strong><span>Software Engineering student</span></div>
@@ -57,9 +64,15 @@
 				<div class="skills-content">
 					<h2 id="skills-title">A few things<br>I can work with.</h2>
 					<div class="skill-list" aria-label="Skills">
-						<div class="skill-row"><span class="skill-number">01</span><span class="skill-name">C++</span><span class="skill-kind">PROGRAMMING</span><span class="skill-mark">↗</span></div>
-						<div class="skill-row"><span class="skill-number">02</span><span class="skill-name">HTML</span><span class="skill-kind">WEB</span><span class="skill-mark">↗</span></div>
-						<div class="skill-row"><span class="skill-number">03</span><span class="skill-name">Python</span><span class="skill-kind">PROGRAMMING</span><span class="skill-mark">↗</span></div>
+						<div class="skill-row"><span class="skill-number">01</span><span
+								class="skill-name">C++</span><span class="skill-kind">PROGRAMMING</span><span
+								class="skill-mark">↗</span></div>
+						<div class="skill-row"><span class="skill-number">02</span><span
+								class="skill-name">HTML</span><span class="skill-kind">WEB</span><span
+								class="skill-mark">↗</span></div>
+						<div class="skill-row"><span class="skill-number">03</span><span
+								class="skill-name">Python</span><span class="skill-kind">PROGRAMMING</span><span
+								class="skill-mark">↗</span></div>
 					</div>
 				</div>
 			</div>
@@ -71,47 +84,60 @@
 					<div class="section-label"><span>03</span> COURSEWORK & PROJECTS</div>
 					<h2 id="assignments-title">Assignments<span>.</span></h2>
 				</div>
-				<p>Keep project links together and share them with your professor.</p>
+				<p>Use this space to share an assignment with your professor and explore my work.</p>
 			</div>
 
 			<div class="assignment-layout">
+				<div class="repo-callout">
+					<div>
+						<p class="repo-eyebrow">A NOTE FROM ME</p>
+						<p>Hi, and thanks for visiting my portfolio. I’m sharing my coursework here, and you can explore
+							the code behind my work in my GitHub repository.</p>
+					</div>
+					<a href="https://github.com/weaamasem126-lang/Web-Design-Development.git" target="_blank"
+						rel="noopener noreferrer">
+						<span>VIEW MY GITHUB
+							REPOSITORY<small>weaamasem126-lang/Web-Design-Development</small></span><span
+							aria-hidden="true">↗</span>
+					</a>
+				</div>
+
 				<form class="assignment-form" id="assignment-form">
-					<h3>Add an assignment</h3>
-					<label for="project-title">Project name</label>
-					<input id="project-title" name="title" type="text" placeholder="e.g. Data structures project" required maxlength="80">
-					<label for="project-course">Course <span class="optional">OPTIONAL</span></label>
-					<input id="project-course" name="course" type="text" placeholder="e.g. Programming II" maxlength="60">
-					<label for="project-url">Project link <span class="optional">RECOMMENDED</span></label>
-					<input id="project-url" name="url" type="url" placeholder="https://github.com/you/project">
-					<p class="field-hint">Use a public GitHub, Google Drive, or deployed project link to share it with your professor.</p>
+					<h3>Share an assignment</h3>
+					<label for="project-title">Title</label>
+					<input id="project-title" name="title" type="text" placeholder="e.g. Data structures assignment"
+						required maxlength="80">
+					<label for="professor-email">Professor’s email</label>
+					<input id="professor-email" name="professorEmail" type="email"
+						placeholder="professor@university.edu" autocomplete="email" required>
 					<label class="upload-control" for="project-file">
 						<span class="upload-icon" aria-hidden="true">＋</span>
-						<span><strong>Attach a project file</strong><small>Saved in this browser only · up to 10 MB</small></span>
+						<span><strong>Attach files</strong><small>Saved in this browser only · up to 10 MB
+								each</small></span>
 						<span class="upload-browse">Browse</span>
 					</label>
-					<input class="visually-hidden" id="project-file" name="file" type="file">
+					<input class="visually-hidden" id="project-file" name="files" type="file" multiple>
 					<p class="selected-file" id="selected-file" aria-live="polite">No file selected</p>
-					<button class="submit-button" type="submit">Add to portfolio <span aria-hidden="true">↗</span></button>
+					<label for="assignment-note">Short note <span class="optional">OPTIONAL</span></label>
+					<textarea id="assignment-note" name="note" rows="4" maxlength="500"
+						placeholder="Add a short note for your professor..."></textarea>
+					<button class="submit-button" type="submit">Save assignment <span
+							aria-hidden="true">↗</span></button>
 					<p class="form-message" id="form-message" role="status" aria-live="polite"></p>
 				</form>
 
 				<div class="assignment-list-wrap">
-					<div class="list-topline"><h3>Your projects</h3><span id="project-count">00 PROJECTS</span></div>
+					<div class="list-topline">
+						<h3>Your assignments</h3><span id="project-count">00 ASSIGNMENTS</span>
+					</div>
 					<div class="assignment-list" id="assignment-list" aria-live="polite"></div>
 					<div class="empty-state" id="empty-state">
 						<span class="empty-mark" aria-hidden="true">↗</span>
-						<strong>Your project list starts here.</strong>
-						<span>Add a project link or an assignment file to get started.</span>
+						<strong>No assignments added yet.</strong>
+						<span>When you’re ready, add an assignment using the form.</span>
 					</div>
-					<div class="professor-contact">
-						<div><strong>Ready to send?</strong><span>Enter your professor’s email to prepare a submission.</span></div>
-						<form id="email-form" class="email-form">
-							<label class="visually-hidden" for="professor-email">Professor’s email address</label>
-							<input id="professor-email" type="email" placeholder="professor@university.edu" autocomplete="email" required>
-							<button type="submit" aria-label="Prepare email to professor" title="Prepare email">↗</button>
-						</form>
-					</div>
-					<p class="hosting-note">Files attached here stay in this browser; they are not uploaded, published, or sent to your professor. Upload files to Google Drive or another public host, then add the share link above.</p>
+					<p class="hosting-note">Files stay in this browser and are not sent automatically. Download them
+						from your assignment list and attach them to the email draft before sending.</p>
 				</div>
 			</div>
 		</section>
@@ -185,7 +211,7 @@
 			const projects = getProjects();
 			projectList.replaceChildren();
 			emptyState.hidden = projects.length > 0;
-			projectCount.textContent = `${String(projects.length).padStart(2, '0')} ${projects.length === 1 ? 'PROJECT' : 'PROJECTS'}`;
+			projectCount.textContent = `${String(projects.length).padStart(2, '0')} ${projects.length === 1 ? 'ASSIGNMENT' : 'ASSIGNMENTS'}`;
 
 			projects.forEach((project, index) => {
 				const article = document.createElement('article');
@@ -198,11 +224,29 @@
 				const title = document.createElement('strong');
 				title.textContent = project.title;
 				const subtitle = document.createElement('span');
-				subtitle.textContent = [project.course, project.fileName].filter(Boolean).join(' · ') || 'Personal project';
+				const fileNames = Array.isArray(project.fileNames) ? project.fileNames : (project.fileName ? [project.fileName] : []);
+				subtitle.textContent = [project.course, ...fileNames].filter(Boolean).join(' · ') || project.note || 'Assignment details';
 				details.append(number, title, subtitle);
 
 				const actions = document.createElement('div');
 				actions.className = 'project-actions';
+				if (project.professorEmail) {
+					const emailLink = document.createElement('a');
+					const emailBody = [
+						'Hello Professor,',
+						'',
+						'I’m sharing my assignment for your review.',
+						'',
+						`Assignment: ${project.title}`,
+						project.note ? `Note: ${project.note}` : '',
+						`My GitHub repository: https://github.com/weaamasem126-lang/Web-Design-Development.git`,
+						fileNames.length ? `I’ll attach these file(s) before sending: ${fileNames.join(', ')}` : ''
+					].filter(Boolean).join('\n');
+					emailLink.className = 'project-open';
+					emailLink.href = `mailto:${encodeURIComponent(project.professorEmail)}?subject=${encodeURIComponent(`Assignment: ${project.title}`)}&body=${encodeURIComponent(`${emailBody}\n\nBest,\nWeaam Asem`)}`;
+					emailLink.textContent = 'Email professor ↗';
+					actions.append(emailLink);
+				}
 				if (project.url) {
 					const openLink = document.createElement('a');
 					openLink.className = 'project-open';
@@ -227,25 +271,33 @@
 					});
 					actions.append(shareButton);
 				}
-				if (project.fileName) {
+				fileNames.forEach((fileName, fileIndex) => {
 					const downloadButton = document.createElement('button');
 					downloadButton.type = 'button';
 					downloadButton.className = 'icon-button';
-					downloadButton.setAttribute('aria-label', `Download ${project.fileName}`);
-					downloadButton.title = 'Download attached file';
+					downloadButton.setAttribute('aria-label', `Download ${fileName}`);
+					downloadButton.title = `Download ${fileName}`;
 					downloadButton.textContent = '↓';
 					downloadButton.addEventListener('click', async () => {
-						const file = await getFile(project.id);
-						if (!file) return;
-						const downloadUrl = URL.createObjectURL(file);
-						const anchor = document.createElement('a');
-						anchor.href = downloadUrl;
-						anchor.download = project.fileName;
-						anchor.click();
-						URL.revokeObjectURL(downloadUrl);
+						try {
+							const fileKey = Array.isArray(project.fileNames) ? `${project.id}:${fileIndex}` : project.id;
+							const file = await getFile(fileKey);
+							if (!file) {
+								formMessage.textContent = `Could not find ${fileName} in this browser.`;
+								return;
+							}
+							const downloadUrl = URL.createObjectURL(file);
+							const anchor = document.createElement('a');
+							anchor.href = downloadUrl;
+							anchor.download = fileName;
+							anchor.click();
+							window.setTimeout(() => URL.revokeObjectURL(downloadUrl), 1000);
+						} catch {
+							formMessage.textContent = `Could not download ${fileName}.`;
+						}
 					});
 					actions.append(downloadButton);
-				}
+				});
 				const removeButton = document.createElement('button');
 				removeButton.type = 'button';
 				removeButton.className = 'icon-button remove-button';
@@ -254,7 +306,11 @@
 				removeButton.textContent = '×';
 				removeButton.addEventListener('click', async () => {
 					saveProjects(getProjects().filter((item) => item.id !== project.id));
-					if (project.fileName) await deleteFile(project.id);
+					if (Array.isArray(project.fileNames)) {
+						await Promise.all(project.fileNames.map((_, index) => deleteFile(`${project.id}:${index}`)));
+					} else if (project.fileName) {
+						await deleteFile(project.id);
+					}
 					renderProjects();
 					formMessage.textContent = 'Assignment removed.';
 				});
@@ -265,58 +321,43 @@
 		}
 
 		fileInput.addEventListener('change', () => {
-			const file = fileInput.files[0];
-			if (file && file.size > 10 * 1024 * 1024) {
+			const files = Array.from(fileInput.files);
+			const oversizedFile = files.find((file) => file.size > 10 * 1024 * 1024);
+			if (oversizedFile) {
 				fileInput.value = '';
-				fileLabel.textContent = 'File is over the 10 MB limit.';
+				fileLabel.textContent = `${oversizedFile.name} is over the 10 MB limit.`;
 				return;
 			}
-			fileLabel.textContent = file ? file.name : 'No file selected';
+			fileLabel.textContent = files.length ? files.map((file) => file.name).join(', ') : 'No file selected';
 		});
 
 		form.addEventListener('submit', async (event) => {
 			event.preventDefault();
 			const data = new FormData(form);
-			const file = fileInput.files[0];
-			if (!data.get('url') && !file) {
-				formMessage.textContent = 'Add a project link or attach a file first.';
-				return;
-			}
+			const files = Array.from(fileInput.files);
 			const project = {
 				id: crypto.randomUUID(),
-				title: data.get('title').trim(),
-				course: data.get('course').trim(),
-				url: data.get('url').trim(),
-				fileName: file ? file.name : ''
+				title: String(data.get('title') || '').trim(),
+				professorEmail: String(data.get('professorEmail') || '').trim(),
+				note: String(data.get('note') || '').trim(),
+				fileNames: files.map((file) => file.name)
 			};
 			try {
-				if (file) await saveFile(project.id, file);
+				await Promise.all(files.map((file, index) => saveFile(`${project.id}:${index}`, file)));
 				const projects = getProjects();
 				projects.unshift(project);
 				saveProjects(projects);
 				form.reset();
 				fileLabel.textContent = 'No file selected';
 				renderProjects();
-				formMessage.textContent = project.url ? 'Assignment added. Its link is ready to share.' : 'Assignment added. The file is saved in this browser only.';
+				formMessage.textContent = 'I saved your assignment details in this browser. Use “Email professor” to prepare a draft.';
 			} catch {
-				formMessage.textContent = 'Could not save this assignment in your browser.';
+				formMessage.textContent = 'I couldn’t save this assignment in your browser. Please try again.';
 			}
-		});
-
-		document.querySelector('#email-form').addEventListener('submit', (event) => {
-			event.preventDefault();
-			const email = document.querySelector('#professor-email').value.trim();
-			const projects = getProjects().filter((project) => project.url);
-			if (projects.length === 0) {
-				formMessage.textContent = 'Add a hosted project link before preparing an email.';
-				return;
-			}
-			const body = projects.map((project) => `${project.title}${project.course ? ` (${project.course})` : ''}\n${project.url}`).join('\n\n');
-			const subject = encodeURIComponent('Weaam Asem - Project submissions');
-			window.location.href = `mailto:${encodeURIComponent(email)}?subject=${subject}&body=${encodeURIComponent(`Hello,\n\nHere are my project submissions:\n\n${body}\n\nBest,\nWeaam Asem`)}`;
 		});
 
 		renderProjects();
 	</script>
 </body>
+
 </html>
