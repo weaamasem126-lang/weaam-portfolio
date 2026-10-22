@@ -359,6 +359,10 @@ a {
 	font-size: 16px;
 }
 
+.repository-section {
+	padding-block: 70px 0;
+}
+
 .assignments-section {
 	padding-block: 89px 98px;
 }
@@ -433,15 +437,6 @@ a {
 	color: #fff;
 	font-size: 10px;
 	font-weight: 800;
-}
-
-.repo-callout>a small {
-	display: block;
-	margin-top: 5px;
-	color: #d4d8c6;
-	font-size: 8px;
-	font-weight: 400;
-	overflow-wrap: anywhere;
 }
 
 .repo-callout>a span:last-child {
@@ -945,6 +940,10 @@ a {
 		padding-block: 62px 69px;
 	}
 
+	.repository-section {
+		padding-top: 52px;
+	}
+
 	.assignment-heading {
 		align-items: start;
 		flex-direction: column;
@@ -952,7 +951,7 @@ a {
 	}
 
 	.assignment-heading h2 {
-		font-size: 52px;
+		font-size: clamp(30px, 9vw, 52px);
 	}
 
 	.assignment-heading>p {

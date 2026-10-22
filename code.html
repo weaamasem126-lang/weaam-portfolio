@@ -22,6 +22,7 @@
 		<nav class="main-nav" aria-label="Main navigation">
 			<a href="#about">About</a>
 			<a href="#skills">Skills</a>
+			<a href="#code-repository">My Code</a>
 			<a href="#assignments">Assignments</a>
 		</nav>
 		<a class="header-contact" href="mailto:?subject=Hello%20Weaam">Say hello <span aria-hidden="true">↗</span></a>
@@ -78,34 +79,41 @@
 			</div>
 		</section>
 
+		<section class="repository-section page-width" id="code-repository"
+			aria-labelledby="code-repository-title">
+			<div class="assignment-heading">
+				<div>
+					<div class="section-label"><span>03</span> PROGRAMMING & PRACTICE</div>
+					<h2 id="code-repository-title">My Code Repository<span>.</span></h2>
+				</div>
+				<p>Programming code and practical coding assignments, kept separate from my written coursework.</p>
+			</div>
+			<div class="repo-callout">
+				<div>
+					<p class="repo-eyebrow">MY PROGRAMMING WORK</p>
+					<p>This repository contains my programming code and practical coding assignments.</p>
+				</div>
+				<a href="https://github.com/weaamasem126-lang/Web-Design-Development" target="_blank"
+					rel="noopener noreferrer">
+					<span>View My Code on GitHub</span><span aria-hidden="true">↗</span>
+				</a>
+			</div>
+		</section>
+
 		<section class="assignments-section page-width" id="assignments" aria-labelledby="assignments-title">
 			<div class="assignment-heading">
 				<div>
-					<div class="section-label"><span>03</span> COURSEWORK & PROJECTS</div>
-					<h2 id="assignments-title">Assignments<span>.</span></h2>
+					<div class="section-label"><span>04</span> THEORETICAL COURSEWORK</div>
+					<h2 id="assignments-title">My Assignments<span>.</span></h2>
 				</div>
-				<p>Use this space to share an assignment with your professor and explore my work.</p>
+				<p>Use this space for theoretical university assignments, reports, research, and other written tasks.</p>
 			</div>
 
 			<div class="assignment-layout">
-				<div class="repo-callout">
-					<div>
-						<p class="repo-eyebrow">A NOTE FROM ME</p>
-						<p>Hi, and thanks for visiting my portfolio. I’m sharing my coursework here, and you can explore
-							the code behind my work in my GitHub repository.</p>
-					</div>
-					<a href="https://github.com/weaamasem126-lang/Web-Design-Development.git" target="_blank"
-						rel="noopener noreferrer">
-						<span>VIEW MY GITHUB
-							REPOSITORY<small>weaamasem126-lang/Web-Design-Development</small></span><span
-							aria-hidden="true">↗</span>
-					</a>
-				</div>
-
 				<form class="assignment-form" id="assignment-form">
 					<h3>Share an assignment</h3>
 					<label for="project-title">Title</label>
-					<input id="project-title" name="title" type="text" placeholder="e.g. Data structures assignment"
+					<input id="project-title" name="title" type="text" placeholder="e.g. Research report on software testing"
 						required maxlength="80">
 					<label for="professor-email">Professor’s email</label>
 					<input id="professor-email" name="professorEmail" type="email"
@@ -136,8 +144,9 @@
 						<strong>No assignments added yet.</strong>
 						<span>When you’re ready, add an assignment using the form.</span>
 					</div>
-					<p class="hosting-note">Files stay in this browser and are not sent automatically. Download them
-						from your assignment list and attach them to the email draft before sending.</p>
+					<p class="hosting-note">Assignment details and files are saved only in this browser; they are not
+						published online or sent automatically. Download attached files from your list and add them to
+						the email draft before sending.</p>
 				</div>
 			</div>
 		</section>
@@ -239,7 +248,6 @@
 						'',
 						`Assignment: ${project.title}`,
 						project.note ? `Note: ${project.note}` : '',
-						`My GitHub repository: https://github.com/weaamasem126-lang/Web-Design-Development.git`,
 						fileNames.length ? `I’ll attach these file(s) before sending: ${fileNames.join(', ')}` : ''
 					].filter(Boolean).join('\n');
 					emailLink.className = 'project-open';
